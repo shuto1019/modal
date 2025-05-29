@@ -1,0 +1,48 @@
+@charset "utf-8";
+@use "../common/functions" as *;
+@use "../common/mixins" as *;
+
+
+.header {
+  padding: vw(60) vw(70) vw(65) vw(70);
+  @include sp(){
+    padding: 0;
+    margin-bottom: vw_sp(60);
+  }
+
+  .header_img {
+    margin-bottom: vw(36);
+    object-fit: cover;
+    @include sp(){
+      width: vw_sp(375);
+      height: vw_sp(334);
+    }
+  }
+  .header_menu {
+    display: flex;
+    gap: vw(49.96);
+    @include sp(){
+      justify-content: center;
+    }
+    .header_menu-title {
+      font-size: vw(14);
+      @include sp(){
+        font-size: vw_sp(14);
+      }
+    }
+    .header_menu-list {
+      display: flex;
+      gap: vw(33);
+      @include sp(){
+        gap: vw_sp(33);
+      }
+      
+      .list-item {
+        font-size: vw(14);
+        @include sp(){
+          font-size: vw_sp(14);
+        }
+      }
+    }
+  }
+}

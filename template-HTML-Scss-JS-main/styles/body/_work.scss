@@ -1,0 +1,52 @@
+@charset "utf-8";
+@use "../common/functions" as *;
+@use "../common/mixins" as *;
+
+.work {
+    display: flex;
+    align-items: center;
+    gap: vw(67);
+    margin: 0 vw(218) vw(84) vw(286);
+    @include sp(){
+        margin: 0 vw_sp(18) vw_sp(89) vw_sp(18);
+        flex-direction: column-reverse;
+        
+    }
+    .work_img {
+        width: vw(482);
+        height: auto;
+        @include sp(){
+            width: vw_sp(339);
+            height: vw_sp(339);
+        }
+    }
+    .work_block {
+        width: vw(333);
+        @include sp(){
+            width: vw_sp(331);
+        }
+        .work_block-title {
+            font-size: vw(24);
+            margin-bottom: vw(17);
+            @include sp(){
+                font-size: vw_sp(20);
+                margin-bottom: vw_sp(16);
+            }
+        }
+        .work_block-name {
+            font-size: vw(16);
+            margin-bottom: vw(31);
+            @include sp(){
+                margin-bottom: vw_sp(31);
+                font-size: vw_sp(16);
+            }
+        }
+        .work_block-text {
+            font-size: vw(16);
+            @include sp(){
+                margin-bottom: vw_sp(65);
+                font-size: vw_sp(16);
+            }
+        }
+    }
+}

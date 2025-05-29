@@ -1,0 +1,17 @@
+@charset "utf-8";
+@use "../common/functions" as *;
+@use "../common/mixins" as *;
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: vw(23);
+
+    .footer_text {
+        font-size: vw(14);
+        @include sp(){
+            font-size: vw_sp(14);
+            padding-bottom: vw_sp(23);
+        }
+    }
+}
