@@ -32,15 +32,40 @@
 		<!-- css -->
 		<link rel="stylesheet" href="styles/style.css" />
 	</head>
-	<body>
+	<body data-overflow ="false">
+		<div class="modal-overlay" data-overlay-active="false"></div>
+		<div class="modal" data-modal-active="false">
+			<div class="modal__content">
+				<p class="modal__content-text">Concept</p>
+			</div>
+			<div class="modal__btn-wrapper">
+				<button class="modal1_close">閉じる</button>
+			</div>
+		</div>
+		<div class="modal" data-modal-active="false">
+			<div class="modal__content">
+				<p class="modal__content-text">Work</p>
+			</div>
+			<div class="modal__btn-wrapper">
+				<button class="modal1_close">閉じる</button>
+			</div>
+		</div>
+		<div class="modal" data-modal-active="false">
+			<div class="modal__content">
+				<p class="modal__content-text">Contact</p>
+			</div>
+			<div class="modal__btn-wrapper">
+				<button class="modal1_close">閉じる</button>
+			</div>
+		</div>
 		<header class="header">
 			<img src="../img/mainvisual.jpg" alt="" class="header_img">
 			<div class="header_menu">
 				<h1 class="header_menu-title">Wooden Jewelry</h1>
 				<div class="header_menu-list">
-					<p class="list-item">Concept</p>
-					<p class="list-item">Work</p>
-					<p class="list-item">Contact</p>
+					<p class="list-item" data-btn-index="0">Concept</p>
+					<p class="list-item" data-btn-index="1">Work</p>
+					<p class="list-item" data-btn-index="2">Contact</p>
 				</div>
 			</div>
 		</header>
